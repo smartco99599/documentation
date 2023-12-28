@@ -4,6 +4,12 @@
 Changelog
 =========
 
+Odoo Online version 17.1
+========================
+
+- Method :meth:`~odoo.models.Model._flush_search` has been deprecated with
+  `#144747 <https://github.com/odoo/odoo/pull/144747>`_.
+
 Odoo version 17.0
 =================
 
