@@ -166,3 +166,8 @@ other record by clicking on it and using the edit button.
 
 .. image:: on_premise/db_uuid.png
    :align: center
+
+.. toctree::
+   :titlesonly:
+
+   on_premise/on-premise_geo-ip-installation

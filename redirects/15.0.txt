@@ -109,8 +109,7 @@ applications/services/fsm/default_warehouse.rst applications/services/field_serv
 # applications/websites
 
 applications/websites/website/reporting/google_analytics_dashboard.rst applications/websites/website/reporting/google_analytics.rst
-
-
+applications/websites/website/configuration/on-premise_geo-ip-installation.rst administration/maintain/on_premise/on-premise_geo-ip-installation.rst # applications/website/* --> administration/maintain/*
 # developer/howtos
 
 developer/howtos/rdtraining/D_mixins.rst developer/tutorials/mixins.rst      # reorganize the developer doc
