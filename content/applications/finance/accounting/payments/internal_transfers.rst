@@ -2,45 +2,40 @@
 Internal transfers
 ==================
 
-In Odoo, internal money transfers can be made in a few clicks. You need at least either two bank
-accounts, two cash journals, or one bank account and one cash journal.
+Internal money transfers can be handled in Odoo. At least two bank accounts are needed to make
+internal transfers.
+
+.. seealso::
+   :doc:`How to add an additional bank account <../bank>`
 
 Configuration
 =============
 
 An internal transfer account is automatically created on your database based on your company's
 localization and depending on your country’s legislation. If needed, the default :guilabel:`Internal
-transfer account` can be modified by going to :menuselection:`Accounting app --> Configuration -->
-Settings` and then under the :guilabel:`Default Accounts` section.
-
-.. note::
-   At least two bank accounts are needed to make internal transfers. Refer to
-   :doc:`Bank and cash accounts section <../bank>` to see how to add an additional bank
-   account to your database.
+transfer account` can be modified by going to :menuselection:`Accounting --> Configuration -->
+Settings --> Default Accounts section`.
 
 Register an internal transfer from one bank to another
 ======================================================
 
-Let's say you have two bank accounts registered on your database and you want to transfer 1,000 USD
-from Bank A to Bank B.
-
 Log an internal transfer
 ------------------------
 
-From the Accounting Dashboard, click on the drop-down selection button (:guilabel:`⋮`) on one of
-your banks. In the :guilabel:`New` column click on :guilabel:`Internal Transfer` and enter the
-information related to the transfer.
-
-.. image:: internal_transfers/internal_transfer.png
-   :align: center
-   :alt: Fill in the information related to your internal transfer
+If you want to transfer 1000 USD from Bank A to Bank B, from the Accounting Dashboard, click on the
+drop-down selection button (:guilabel:`⋮`) on one of your banks, then click on :guilabel:`Payments`.
+Each payment can be marked as :guilabel:`Internal Transfer`, however, a :guilabel:`Destination Journal`
+must be selected in order to :guilabel:`Confirm` the internal transfer.
 
 .. note::
-   Fill in the :guilabel:`Memo` field for automatic reconciliation.
+  You can only make **internal transfers** on *unposted* payments.
 
-:guilabel:`Save` and :guilabel:`Confirm` to register your internal transfer. The money is now booked
-in the transfer account and another payment is **automatically** created in the destination journal
-(Bank B).
+.. image:: internal_transfers/transfer-check.png
+   :align: center
+   :alt: Internal transfer activation
+
+The money is now booked in the transfer account and another payment is automatically created in the
+destination journal.
 
 Bank journal (Bank A)
 ~~~~~~~~~~~~~~~~~~~~~
@@ -77,37 +72,29 @@ Automated booking - Bank journal (BANK B)
      - **$1,000**
 
 .. note::
-   There are one outstanding payment and one outstanding receipt pending in your two bank account
+   There is one outstanding payment and one outstanding receipt pending in your two bank account
    journals, because the bank statement confirming the sending and receiving of the money has not
    been booked yet.
 
-.. image:: internal_transfers/outstanding-payments-receipts.png
+Internal transfer reconciliation
+--------------------------------
+
+By clicking on the :guilabel:`Journal Entry` button in the payment form, the journal items detail
+can be seen.
+
+.. image:: internal_transfers/transaction-entry.png
    :align: center
-   :alt: Outstanding Payments/Receipts pending bank statement booking
+   :alt: Transaction lines prior reconciliation
 
-.. _interbank/import-and-reconcile:
+From this form, you can click on the :guilabel:`Reconciled Items` to access the internal transfer
+reconciliation, select both and then click on :guilabel:`Reconcile`.
 
-Manage and reconcile bank statements
-------------------------------------
-
-The next step is to book the bank statements to finalize the transaction by creating,
-:doc:`importing <../bank/transactions>`, or :doc:`synchronizing <../bank/bank_synchronization>` your
-:guilabel:`Transactions lines`. Fill in the :guilabel:`Ending balance` and click on the
-:guilabel:`Reconcile` button.
-
-.. image:: internal_transfers/transactions-line.png
+.. image:: internal_transfers/transfer-reconciliation.png
    :align: center
-   :alt: Transaction lines to be filled in prior to reconciliation
+   :alt: Reconcile your payment
 
 .. seealso::
    :doc:`../bank/reconciliation`
-
-In the next window, choose counterparts for the payment - in this example, the outstanding payment
-account - then click :guilabel:`Validate`.
-
-.. image:: internal_transfers/bank-reconciliation.png
-   :align: center
-   :alt: Reconcile your payment
 
 Bank journal entry
 ~~~~~~~~~~~~~~~~~~
