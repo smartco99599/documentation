@@ -52,3 +52,17 @@ QR-code` option to *EMV Merchant-Presented QR-code*.
 
 Ensure that the :guilabel:`Recipient Bank` is the one you configured, as Odoo uses this field to
 generate the PayNow QR code.
+
+.. _singapore/employment-hero:
+
+Employment Hero Singaporean Payroll
+===================================
+
+If your business is already up and running with `Employment Hero <https://employmenthero.com/>`_,
+you can use our connector as an alternative payroll solution.
+
+.. seealso::
+   :doc:`Employment Hero <./employment_hero>`
+
+.. important::
+   The **Payroll URL** for **Singapore** is: <https://apisg.yourpayroll.io/>.

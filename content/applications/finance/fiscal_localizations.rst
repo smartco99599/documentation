@@ -146,8 +146,10 @@ available on Odoo.
    fiscal_localizations/italy
    fiscal_localizations/kenya
    fiscal_localizations/luxembourg
+   fiscal_localizations/malaysia
    fiscal_localizations/mexico
    fiscal_localizations/netherlands
+   fiscal_localizations/new_zealand
    fiscal_localizations/romania
    fiscal_localizations/peru
    fiscal_localizations/philippines
@@ -159,3 +161,4 @@ available on Odoo.
    fiscal_localizations/vietnam
    fiscal_localizations/united_arab_emirates
    fiscal_localizations/united_kingdom
+   fiscal_localizations/employment_hero
