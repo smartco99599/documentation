@@ -144,9 +144,9 @@ Online payment providers
      - |V|
    * - :doc:`Xendit <payment_providers/xendit>`
      - The provider website
-     - |V|
      -
-     - Full and partial
+     -
+     -
      -
 
 .. |V| replace:: ✔

@@ -39,16 +39,8 @@ Webhook token and URL
 #. In the :guilabel:`Webhook URL` section, enter your Odoo database URL (e.g.,
    `https://example.odoo.com`) and click :guilabel:`Test and save` for each of the following fields:
 
-   - :guilabel:`Unified Refunds: Refund request succeeded`
-   - :guilabel:`Unified Refunds: Refund Request failed`
    - :guilabel:`Invoices: Invoices paid`
 
-Optional 3DS
-------------
-
-Go to `Configuration: Payment Methods --> Cards: Settings
-<https://dashboard.xendit.co/settings/payment-methods/cards-configuration#card-settings>`_ and
-enable :guilabel:`Optional 3DS`.
 
 Configuration on Odoo
 =====================
@@ -57,7 +49,7 @@ Configuration on Odoo
    to :guilabel:`Enabled`.
 #. Fill in the :guilabel:`Xendit API Key` and :guilabel:`Xendit Callback Token` fields with the
    information saved from the previous steps.
-#. Configure the rest of the options to your liking.
+#. Configure the payment methods you want to activate on the configuration tab.
 
 .. seealso::
    :doc:`../payment_providers`
