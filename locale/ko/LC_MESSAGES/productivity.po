@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-21 13:43+0000\n"
+"POT-Creation-Date: 2024-01-19 15:28+0000\n"
 "PO-Revision-Date: 2023-11-08 08:57+0000\n"
 "Last-Translator: Sarah Park, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/odoo/teams/41243/ko/)\n"
@@ -67,6 +67,8 @@ msgid ""
 "go to the `Google API Console <https://console.developers.google.com>`_ and "
 "log into the Google account."
 msgstr ""
+"새로운 Google API 프로젝트를 생성하여 Google 캘린더 API를 활성화합니다. 먼저, 'Google API 콘솔 "
+"<https://console.developers.google.com>`_로 이동하여 Google 계정에 로그인합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:22
 msgid ""
@@ -74,6 +76,8 @@ msgid ""
 " enter a country and agree to the Terms of Service. Select a country from "
 "the drop-down list and agree to the :abbr:`ToS (Terms of Service)`."
 msgstr ""
+"이 페이지를 처음 방문하는 경우 Google에서 사용자에게 국가를 입력하고 서비스 약관에 동의하라는 메시지를 표시합니다. 드롭다운 "
+"목록에서 국가를 선택하고 :abbr:`ToS (서비스 약관)`에 동의합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:26
 msgid ""
@@ -81,20 +85,22 @@ msgid ""
 "project to configure OAuth in, and store credentials. Click :guilabel:`New "
 "Project`."
 msgstr ""
+"다음으로, :guilabel:`프로젝트 선택`에서 OAuth 인증을 구성하고 자격 증명을 저장할 API 프로젝트를 선택 (또는 "
+"생성)합니다. guilabel:`새 프로젝트`를 클릭하세요."
 
 #: ../../content/applications/productivity/calendar/google.rst-1
 msgid "Create a new API project to store credentials."
-msgstr ""
+msgstr "자격 증명을 저장할 새로운 API 프로젝트를 만듭니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:34
 msgid ""
 "Give the API Project a clear name, like \"Odoo Sync\", so it can be easily "
 "identified."
-msgstr ""
+msgstr "API 프로젝트를 쉽게 식별할 수 있도록 'Odoo 동기화'와 같이 이름을 명확하게 지정합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:37
 msgid "Enable Google calendar API"
-msgstr ""
+msgstr "Google 캘린더 API 활성화하기"
 
 #: ../../content/applications/productivity/calendar/google.rst:39
 msgid ""
@@ -102,10 +108,12 @@ msgid ""
 " :guilabel:`Enabled APIs and Services` again if the :guilabel:`Search bar` "
 "doesn't appear."
 msgstr ""
+"이제 왼쪽 메뉴에서 :guilabel:`사용하는 API 및 서비스`를 클릭합니다. guilabel:`검색창`이 나타나지 않는 경우에는 "
+":guilabel:`사용하는 API 및 서비스`를 다시 선택합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst-1
 msgid "Enable APIs and Services on the API Project."
-msgstr ""
+msgstr "API 프로젝트에서 API 및 서비스를 활성화합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:46
 msgid ""
@@ -113,10 +121,12 @@ msgid ""
 " :guilabel:`Google Calendar API` from the search results. Click "
 ":guilabel:`Enable`."
 msgstr ""
+"그런 다음 검색창에서 `Google 캘린더 API`를 찾은 후 검색 결과에서 :guilabel:`Google 캘린더 API`를 "
+"선택합니다. guilabel:`활성화`를 클릭합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst-1
 msgid "Enable the Google Calendar API."
-msgstr ""
+msgstr "Google 캘린더 API를 활성화합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:54
 msgid "OAuth consent screen"
@@ -128,6 +138,8 @@ msgid ""
 " that, click on :guilabel:`OAuth consent` in the left menu and then select "
 "the :guilabel:`User Type`."
 msgstr ""
+"이제 API 프로젝트가 생성되었으므로, OAuth를 구성해야 합니다. 왼쪽 메뉴에서 :guilabel:`OAuth 동의`를 클릭한 다음 "
+":guilabel:`사용자 유형`을 선택합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:60
 msgid ""
@@ -157,12 +169,15 @@ msgid ""
 ":guilabel:`Developer contact information` section. Then, click "
 ":guilabel:`Save and Continue`."
 msgstr ""
+"두 번째 단계인 :guilabel:`OAuth 동의 화면`에서 :guilabel:`앱 이름` 필드에 `Odoo`를 입력하고, "
+":guilabel:`사용자 지원 이메일` 필드에 이메일 주소를 선택한 후 :guilabel:`개발자 연락처 정보`에 이메일 주소를 "
+"입력합니다. 그 다음 :guilabel:`저장 후 계속`을 클릭합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:72
 msgid ""
 "Skip the third step, :menuselection:`Scopes`, by clicking :guilabel:`Save "
 "and Continue`."
-msgstr ""
+msgstr "세 번째 단계인 :menuselection:`범위`는 건너뛰고 :guilabel:`저장 후 계속`을 클릭합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:74
 msgid ""
@@ -171,6 +186,9 @@ msgid ""
 ":guilabel:`Add Users`, and then the :guilabel:`Save and Continue` button. A "
 "summary of the app registration appears."
 msgstr ""
+"다음으로, 테스트 모드 (외부)에서 계속 사용하려면 :guilabel:`테스트 사용자` 단계에서 설정 중인 이메일 주소를 추가하고 "
+":guilabel:`사용자 추가`를 클릭한 다음 :guilabel:`저장 후 계속` 버튼을 클릭합니다. 앱 등록과 관련된 요약이 "
+"나타납니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:78
 msgid ""
@@ -181,7 +199,7 @@ msgstr "마지막으로 화면창을 아래로 스크롤하여 :guilabel:`현황
 msgid ""
 "Now, the OAuth consent has been configured, and it's time to create "
 "credentials."
-msgstr ""
+msgstr "이제 OAuth 동의 설정이 왼료되었으므로 자격 증명을 생성할 차례입니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:83
 msgid "Create credentials"
@@ -195,6 +213,9 @@ msgid ""
 ":guilabel:`Create Credentials`, and select :guilabel:`OAuth client ID`, "
 "Google will open a guide to create credentials."
 msgstr ""
+"구글 캘린더를 Odoo와 연결하려면 '클라이언트 ID*와 *클라이언트 비밀번호*가 필요합니다. 이는 Google 콘솔의 마지막 "
+"단계입니다. 먼저 왼쪽 메뉴에서 :guilabel:`자격 증명`을 클릭합니다. 그런 다음 :guilabel:`자격 증명 생성`을 클릭하여"
+" :guilabel:`OAuth 클라이언트 ID`를 선택하면 Google이 자격증명 만들기 가이드가 열립니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:90
 msgid ""
@@ -202,6 +223,8 @@ msgid ""
 "application` for the :guilabel:`Application Type` field, and type `My Odoo "
 "Database` for the :guilabel:`Name`."
 msgstr ""
+":menuselection:`OAuth 클라이언트 ID 생성`의 :guilabel:`애플리케이션 유형` 필드에 `웹사이트 애플리케이션`을"
+" 선택하고, :guilabel:`이름`에 `내 Odoo 데이터베이스`를 입력합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:93
 msgid ""
@@ -209,6 +232,8 @@ msgid ""
 ":guilabel:`+ Add URI` and type the company's Odoo full :abbr:`URL (Uniform "
 "Resource Locator)` address."
 msgstr ""
+":guilabel:`인증된 자바스크립트 출처`에서 :guilabel:`+ URI 추가`를 클릭하고 회사의 Odoo 전체 "
+":abbr:`URL (유니폼 리소스 로케이터)` 주소를 입력합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:95
 msgid ""
@@ -217,21 +242,24 @@ msgid ""
 "address followed by `/google_account/authentication`. Finally, click "
 ":guilabel:`Create`."
 msgstr ""
+":guilabel:`인증된 리디렉션 URI` 섹션에서 :guilabel:`+ URI 추가`를 클릭하고 회사의 Odoo :abbr:`URL"
+" (유니폼 리소스 로케이터)` 주소 뒤에 `/google_account/authentication`을 입력합니다. 마지막으로 "
+":guilabel:`신규 생성`을 클릭합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst-1
 msgid ""
 "Add the authorized JavaScript origins and the authorized redirect URIs."
-msgstr ""
+msgstr "인증된 자바스크립트 출처와 인증된 리디렉션 URI를 추가합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:103
 msgid ""
 "A :guilabel:`Client ID` and :guilabel:`Client Secret` will appear, copy "
 "these to a notepad."
-msgstr ""
+msgstr ":guilabel:`클라이언트 ID`와 :guilabel:`클라이언트 비밀번호`가 표시되면 메모장에 복사합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:106
 msgid "Setup in Odoo"
-msgstr ""
+msgstr "Odoo에서 설정하기"
 
 #: ../../content/applications/productivity/calendar/google.rst:108
 msgid ""
@@ -240,10 +268,12 @@ msgid ""
 "Integrations --> Google Calendar`. Check the box next to :guilabel:`Google "
 "Calendar`."
 msgstr ""
+"*클라이언트 ID*와 *클라이언트 비밀번호*가 확인되었으면 Odoo 데이터베이스를 열고 :menuselection:`설정 --> 일반 "
+"설정 --> 통합 --> 구글 캘린더`로 이동합니다. :guilabel:`Google 캘린더` 옆의 확인란에 표시합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst-1
 msgid "The Google Calendar checkbox in General Settings."
-msgstr ""
+msgstr "일반 설정의 Google 캘린더 확인란."
 
 #: ../../content/applications/productivity/calendar/google.rst:116
 msgid ""
@@ -251,22 +281,26 @@ msgid ""
 " Calendar API credentials page into their respective fields below the "
 ":guilabel:`Google Calendar` checkbox. Then, click :guilabel:`Save`."
 msgstr ""
+"다음으로, Google 캘린더 API 자격 증명 페이지에서 *클라이언트 ID*와 *클라이언트 비밀번호*를 복사하여 "
+":guilabel:`Google 캘린더` 확인란 아래에 있는 필드에 붙여넣습니다. 그런 다음 :guilabel:`저장`을 클릭합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:121
 msgid "Sync calendar in Odoo"
-msgstr ""
+msgstr "Odoo에서 캘린더 동기화하기"
 
 #: ../../content/applications/productivity/calendar/google.rst:123
 msgid ""
 "Finally, open the :menuselection:`Calendar` app in Odoo and click on the "
 ":guilabel:`Google` sync button to sync Google Calendar with Odoo."
 msgstr ""
+"마지막으로, Odoo에서 :menuselection:`캘린더` 앱을 열고 :guilabel:`Google` 동기화 버튼을 클릭하여 "
+"Google 캘린더를 Odoo와 동기화합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst-1
 msgid ""
 "Click the Google sync button in Odoo Calendar to sync Google Calendar with "
 "Odoo."
-msgstr ""
+msgstr "Odoo 캘린더에서 Google 동기화 버튼을 클릭하면 Google 캘린더가 Odoo와 동기화됩니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:131
 msgid ""
@@ -276,14 +310,17 @@ msgid ""
 "the app be unverifed), and finally select :guilabel:`Continue` (to give "
 "permission for the transfer of data)`."
 msgstr ""
+"Google 캘린더를 Odoo와 처음 동기화하면 페이지가 Google 계정으로 리디렉션됩니다. 액세스 권한이 있는 "
+":guilabel:`이메일 계정`을 선택한 다음 :guilabel:`계속` (앱이 확인되지 않은 경우)를 선택하고 마지막으로 "
+":guilabel:`계속` (데이터 전송에 대한 권한 부여)을 선택합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst-1
 msgid "Give Odoo permission to access Google Calendar."
-msgstr ""
+msgstr "Odoo에 Google 캘린더 액세스 권한을 부여합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:140
 msgid "Now, Odoo Calendar is successfully synced with Google Calendar!"
-msgstr ""
+msgstr "이제 Odoo 캘린더가 구글 캘린더와 성공적으로 동기화되었습니다!"
 
 #: ../../content/applications/productivity/calendar/google.rst:143
 msgid ""
@@ -292,50 +329,55 @@ msgid ""
 "before attempting to sync the desired Google Calendar with the user's "
 "production database."
 msgstr ""
+"Odoo에서는 Google 캘린더를 사용자의 프로덕션 데이터베이스와 동기화하기 전에, 테스트 데이터베이스와 테스트 이메일 주소 (다른 "
+"용도로 사용하지 않을 것)에서 Google 캘린더 동기화를 테스트하는 것을 적극 권장합니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:147
 msgid "Once a user synchronizes their Google calendar with the Odoo calendar:"
-msgstr ""
+msgstr "Google 캘린더를 Odoo 캘린더와 동기화하면 다음과 같이 활용할 수 있습니다:"
 
 #: ../../content/applications/productivity/calendar/google.rst:149
 msgid ""
 "Creating an event in Odoo causes Google to send an invitation to all event "
 "attendees."
-msgstr ""
+msgstr "Odoo에서 이벤트를 생성하면 Google에서 모든 이벤트 참석자에게 초대를 보냅니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:150
 msgid ""
 "Deleting an event in Odoo causes Google to send a cancellation to all event "
 "attendees."
-msgstr ""
+msgstr "Odoo에서 이벤트를 삭제하면 Google에서 모든 이벤트 참석자에게 취소 알림을 보냅니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:151
 msgid ""
 "Adding a contact to an event causes Google to send an invitation to all "
 "event attendees."
-msgstr ""
+msgstr "이벤트에 연락처를 추가하면 Google에서 모든 이벤트 참석자에게 초대를 보냅니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:152
 msgid ""
 "Removing a contact from an event causes Google to send a cancellation to all"
 " event attendees."
-msgstr ""
+msgstr "이벤트에서 연락처를 삭제하면 Google에서 모든 이벤트 참석자에게 취소 알림을 보냅니다."
 
 #: ../../content/applications/productivity/calendar/google.rst:154
 msgid ""
 "Events can be created in Google Calendar without sending a notification by "
 "selecting :guilabel:`Don't Send` when prompted to send invitation emails."
 msgstr ""
+"초대 이메일을 보내라는 메시지에 :guilabel:'보내지 않음'을 선택하면 알림을 보내지 않고도 Google 캘린더에서 이벤트를 생성할"
+" 수 있습니다."
 
 #: ../../content/applications/productivity/calendar/outlook.rst:3
 msgid "Outlook Calendar synchronization"
-msgstr ""
+msgstr "Outlook 캘린더 동기화"
 
 #: ../../content/applications/productivity/calendar/outlook.rst:5
 msgid ""
 "Synchronizing a user's Outlook Calendar with Odoo is useful for keeping "
 "track of their tasks and appointments across all related applications."
 msgstr ""
+"사용자의 Outlook 캘린더를 Odoo와 동기화하면 관련된 모든 애플리케이션에서 사용자의 작업과 약속을 추적할 수 있습니다."
 
 #: ../../content/applications/productivity/calendar/outlook.rst:9
 msgid ":doc:`/applications/general/auth/azure`"
@@ -347,7 +389,7 @@ msgstr ":doc:`/administration/maintain/azure_oauth`"
 
 #: ../../content/applications/productivity/calendar/outlook.rst:13
 msgid "Register the application with Microsoft Azure"
-msgstr ""
+msgstr "Microsoft Azure에 애플리케이션 등록하기"
 
 #: ../../content/applications/productivity/calendar/outlook.rst:15
 msgid ""
@@ -356,6 +398,9 @@ msgid ""
 "paid for Azure. For more information, `click here "
 "<https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F>`_."
 msgstr ""
+"Outlook 캘린더를 Odoo의 캘린더와 동기화하려면 Microsoft Azure 계정이 있어야 합니다. Azure를 사용해 본 적이 "
+"없거나 유료로 사용해본 적이 없는 경우 무료로 계정을 만들 수 있습니다. 자세한 내용은 '여기를 클릭하세요 "
+"<https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F>`_."
 
 #: ../../content/applications/productivity/calendar/outlook.rst:19
 msgid ""
@@ -470,7 +515,7 @@ msgstr ""
 
 #: ../../content/applications/productivity/calendar/outlook.rst:85
 msgid "Sync with Outlook"
-msgstr ""
+msgstr "Outlook과 동기화하기"
 
 #: ../../content/applications/productivity/calendar/outlook.rst:89
 msgid ""
@@ -479,6 +524,8 @@ msgid ""
 "purpose) before attempting to sync the desired Outlook Calendar with the "
 "user's production database."
 msgstr ""
+"Odoo에서는 Outlook 캘린더를 사용자의 프로덕션 데이터베이스와 동기화하기 전에, 테스트 데이터베이스와 테스트 이메일 주소 (다른 "
+"용도로 사용하지 않을 것)에서 Outlook 캘린더 동기화를 테스트하는 것을 적극 권장합니다."
 
 #: ../../content/applications/productivity/calendar/outlook.rst:93
 msgid ""
@@ -487,6 +534,8 @@ msgid ""
 "from Odoo's calendar during the sync as new events, causing an email "
 "notification to be sent from Outlook to all the event attendees."
 msgstr ""
+"사용자가 Outlook 캘린더를 동기화하기 전에 Odoo 캘린더에 과거, 현재 또는 향후의 이벤트가 있는 경우, Outlook은 동기화 "
+"중에 Odoo의 캘린더에서 가져온 이벤트를 새로운 이벤트로 처리하여 전체 이벤트 참석자에게 Outlook 이메일 알림을 보내게 됩니다."
 
 #: ../../content/applications/productivity/calendar/outlook.rst:97
 msgid ""
@@ -495,6 +544,8 @@ msgid ""
 "Outlook calendar before the first ever sync, delete the events from Odoo, "
 "and then start the sync."
 msgstr ""
+"과거, 현재 및 향후에 있을 전체 이벤트의 참석자에게 이메일을 전송하는 것을 방지하려면, 최초 동기화 이전에 Odoo 캘린더에 있는 "
+"이벤트를 Outlook 캘린더에 추가하고, Odoo에서 이벤트를 삭제한 후 동기화를 시작해야 합니다."
 
 #: ../../content/applications/productivity/calendar/outlook.rst:101
 msgid ""
@@ -504,6 +555,8 @@ msgid ""
 "changed), with no exceptions. This is a limitation that cannot be fixed from"
 " Odoo's side."
 msgstr ""
+"Odoo 캘린더를 Outlook 캘린더와 동기화한 후에도 Outlook은 이벤트를 수정할 때마다 (생성, 삭제, 보관 취소 또는 이벤트 "
+"날짜/시간 변경) 전체 이벤트 참가자에게 알림을 계속 보내게 됩니다. 이는 Odoo 측에서 해결할 수 없는 제한 사항입니다."
 
 #: ../../content/applications/productivity/calendar/outlook.rst:106
 msgid ""
@@ -607,10 +660,13 @@ msgid ""
 "attendee. To set up an ICE server, first, create a Twilio account for video "
 "calls, and then, connect that Twilio account to Odoo."
 msgstr ""
+"Odoo 메일 및 채팅에서는 음성 및 영상 통화에 WebRTC API와 피어투피어 연결을 사용합니다. 통화 참석자 중 한 명이 대칭 "
+"NAT 뒤에 있는 경우, 통화 참석자와의 연결 설정을 하도록 ICE 서버를 구성해야 합니다. ICE 서버를 설정하려면 먼저 영상 통화용 "
+"Twilio 계정을 만든 다음, 해당 Twilio 계정을 Odoo에 연결합니다."
 
 #: ../../content/applications/productivity/discuss/advanced/ice_servers.rst:11
 msgid "Create a Twilio account"
-msgstr ""
+msgstr "Twilio 계정 만들기"
 
 #: ../../content/applications/productivity/discuss/advanced/ice_servers.rst:13
 msgid ""
@@ -620,6 +676,9 @@ msgid ""
 ":guilabel:`Start your free trial`. Verify your email address with Twilio, as"
 " per their instructions."
 msgstr ""
+"먼저, 'Twilio <https://www.twilio.com>`_로 이동하여 :guilabel:`가입하기`를 클릭하여 새 Twilio"
+" 계정을 만듭니다. 그런 다음, 이름과 이메일 주소를 입력하고 비밀번호를 생성한 후 Twilio의 서비스 약관에 동의합니다. 그 후 "
+":guilabel:`무료 평가판 시작`을 클릭합니다. Twilio의 안내에 따라 이메일 주소 인증을 진행합니다."
 
 #: ../../content/applications/productivity/discuss/advanced/ice_servers.rst:18
 msgid ""
@@ -627,6 +686,8 @@ msgid ""
 " text message containing a verification code. Enter the verification code "
 "into Twilio to verify your phone number."
 msgstr ""
+"그런 다음 Twilio에 전화 번호를 입력합니다. 그러면 Twilio에서 SMS 문자 메시지로 인증 코드를 전송합니다. Twilio에 "
+"인증 코드를 입력하여 휴대폰 번호를 인증합니다."
 
 #: ../../content/applications/productivity/discuss/advanced/ice_servers.rst:22
 msgid ""
@@ -679,12 +740,15 @@ msgid ""
 ":guilabel:`Account Info` section, locate the :guilabel:`Account SID` and the"
 " :guilabel:`Auth Token`. Both of these are needed to connect Twilio to Odoo."
 msgstr ""
+"계정 SID 및 인증 토큰을 찾으려면 Twilio 계정 현황판으로 이동합니다. 그 다음 사이드바에서 :guilabel:`개발`을 "
+"클릭합니다. :guilabel:`계정 정보` 섹션에서 :guilabel:`계정 SID`와 :guilabel:`인증 토큰`을 확인합니다. "
+"Twilio를 Odoo에 연결려면 두 가지가 모두 필요합니다."
 
 #: ../../content/applications/productivity/discuss/advanced/ice_servers.rst-1
 msgid ""
 "The Twilio Account SID and Auth Token can be found uner the Account Info "
 "section."
-msgstr ""
+msgstr "Twilio 계정 SID 및 인증 토큰은 계정 정보 섹션 아래에서 확인할 수 있습니다."
 
 #: ../../content/applications/productivity/discuss/advanced/ice_servers.rst:49
 msgid "Connect Twilio to Odoo"
@@ -781,6 +845,10 @@ msgid ""
 "stage (if an email\\ is configured to be sent, for example if the task is "
 "set to :guilabel:`Done`)."
 msgstr ""
+"기본적으로, :guilabel:`알림` 필드는 :guilabel:`이메일로 처리`로 설정되어 있습니다. 해당 설정을 활성화하면 "
+"메시지창에서 메시지가 전송되거나, (메시지창에서) `@` 멘션이 들어있는 메모가 전송되거나, 사용자가 팔로우 중인 레코드에서 알림이 "
+"전송될 때마다 Odoo에서 알림 이메일을 보내게 됩니다. 단계가 변경될 경우 알림을 발송하도록 작업이 연결됩니다 (예를 들면 환경 "
+"설정에서 이메일 전송되도록 한 후, 작업을 :guilabel:`완료`로 설정하는 경우)."
 
 #: ../../content/applications/productivity/discuss/overview/get_started.rst:27
 msgid ""
@@ -792,6 +860,11 @@ msgid ""
 "pinning the message by selecting :guilabel:`Pin` or even mark the message as"
 " unread by selecting :guilabel:`Marked as unread`."
 msgstr ""
+":guilabel:`Odoo에서 처리`를 선택하면, 위의 알림이 *메일 및 채팅* 앱의 *받은 편지함*에 표시됩니다. 메시지에서 다음과 "
+"같이 작업할 수 있습니다: :guilabel:`반응 추가`를 클릭하여 이모티콘으로 응답하거나 :guilabel:`답장`을 클릭하여 "
+"메시지에 답장합니다. 추가 작업으로는, :guilabel:`할 일로 표시`를 클릭하여 메시지에 별표 표시를 하거나 "
+":guilabel:`고정`을 선택하여 메시지를 고정할 수도 있으며 :guilabel:`읽지 않음으로 표시`를 선택하여 메시지를 읽지 "
+"않음으로 표시할 수도 있습니다."
 
 #: ../../content/applications/productivity/discuss/overview/get_started.rst-1
 msgid "View of an inbox message and its action options in Odoo Discuss."
@@ -865,7 +938,7 @@ msgstr ""
 
 #: ../../content/applications/productivity/discuss/overview/get_started.rst-1
 msgid "View of a couple of chat window messages for Odoo Discuss."
-msgstr ""
+msgstr "Odoo 메일 및 채팅에 있는 다수의 메시지창 메시지 화면."
 
 #: ../../content/applications/productivity/discuss/overview/get_started.rst:84
 msgid ""
@@ -1376,10 +1449,15 @@ msgid ""
 "to indicate that it is a private channel. Select the channel type that best "
 "fits the communication needs."
 msgstr ""
+"*공개* 채널은 모든 사람이 볼 수 있는 반면에, *비공개* 채널은 해당 채널에 초대된 사용자만 볼 수 있습니다. 새로 채널을 만드려면 "
+":menuselection:`메일 및 채팅` 앱으로 이동하여, 왼쪽 메뉴에 있는 :menuselection:`채널` 제목 옆 "
+":guilabel:`➕(더하기)` 아이콘을 클릭합니다. 채널명을 입력하면 두 가지 선택 옵션이 나타납니다: 첫 번째 옵션은 공개 채널임을"
+" 나타내는 해시태그 (`#`)가 있는 채널이며, 두 번째 옵션은 비공개 채널임을 나타내기 위해 옆에 자물쇠 아이콘(`🔒`)이 표시되어 "
+"있습니다. 커뮤니케이션 목적에 가장 잘 맞는 채널 유형을 선택합니다."
 
 #: ../../content/applications/productivity/discuss/overview/team_communication.rst-1
 msgid "View of discuss's sidebar and a channel being created in Odoo Discuss."
-msgstr ""
+msgstr "Odoo 메일 및 채팅의 사이드바 및 해당 앱에서 생성된 채널 화면."
 
 #: ../../content/applications/productivity/discuss/overview/team_communication.rst:26
 msgid ""
@@ -1545,6 +1623,12 @@ msgid ""
 "Industry 4.0 standard and can be utilized in a wide variety of industries, "
 "and for things like building automation, packaging, utilities, etc."
 msgstr ""
+"이제 :abbr:`IoT (사물 인터넷)` 박스를 통해 OPC (Open Platform Communications: 개방형 플랫폼 "
+"통신) UA (통합 아키텍처) 프로토콜을 지원합니다. :abbr:`OPC (개방형 플랫폼 통신)` :abbr:`UA (통합 아키텍처)`는"
+" 장치 간, 기계 간, 시스템 간 산업 통신을 위해 지정된 방식으로 정보를 교환하는 개방형 표준 방식입니다. 여기에서는 정보 기술과 운영"
+" 기술 간의 통신까지 아우르고 있습니다. :abbr:`OPC (개방형 플랫폼 통신)` :abbr:`UA (통합 아키텍처)`는 어떤 "
+"소프트웨어 플랫폼에서든, 다양한 장치에서 사용할 수 있으며 안전하게 배포할 수 있습니다. 인더스트리 4.0 표준의 세계로 진입한 "
+":abbr:`IoT (사물인터넷)` 박스는 빌딩 자동화, 패키징, 유틸리티 등 다양한 산업 분야에서 활용될 수 있습니다."
 
 #: ../../content/applications/productivity/iot/config.rst:5
 #: ../../content/applications/productivity/mail_plugins/outlook.rst:10
@@ -1648,6 +1732,9 @@ msgid ""
 "unplugging the unit from the power source for ten seconds and re-plugging it"
 " back in."
 msgstr ""
+"기본값으로, :abbr:`IoT (사물 인터넷)` 박스에는 장치가 부팅된 후 최대 5분 동안 *페어링 코드*가 표시됩니다. 5분 후에는 "
+"보안을 위해 *페어링 코드*가 사라지며 :abbr:`IoT (사물 인터넷)` 박스를 전원에서 10초 동안 뽑았다가 다시 연결하여 수동으로"
+" 재부팅해야 합니다."
 
 #: ../../content/applications/productivity/iot/config/connect.rst:65
 msgid ""
@@ -1657,6 +1744,9 @@ msgid ""
 "instructions on how to access the :abbr:`IoT (Internet of Things)` box "
 "homepage visit :ref:`iot_connect/token`."
 msgstr ""
+":abbr:`IoT (사물 인터넷)` 박스에 화면이 연결되지 않은 경우, :abbr:`IoT (사물 인터넷)` 박스 홈페이지에서 "
+":guilabel:`POS 디스플레이` 버튼을 클릭하면 *페어링 코드*에 액세스할 수 있습니다. :abbr:`IoT (사물 인터넷)` "
+"박스 홈페이지에 액세스하는 방법에 대한 지침을 확인하려면 :ref:`iot_connect/token`을 방문해 보세요."
 
 #: ../../content/applications/productivity/iot/config/connect.rst:70
 msgid ""
@@ -1668,6 +1758,10 @@ msgid ""
 "(Internet of Things)` box and it will appear on the :menuselection:`IoT "
 "Boxes` page."
 msgstr ""
+"컴퓨터에서 :menuselection:`IoT 앱 --> IoT 박스`로 이동한 다음 :menuselection:`IoT 박스` 현황판 "
+"왼쪽 상단에 있는 :guilabel:`연결t` 버튼을 클릭합니다. :guilabel:`페어링 코드` 필드에 해당 *페어링 코드*를 "
+"입력하고 :guilabel:`페어` 버튼을 클릭합니다. 이제 데이터베이스가 :abbr:`IoT (사물 인터넷)` 박스에 연결되고 "
+":menuselection:`IoT 박스` 페이지에 표시됩니다."
 
 #: ../../content/applications/productivity/iot/config/connect.rst:79
 msgid "WiFi connection"
@@ -1677,7 +1771,7 @@ msgstr "와이파이 연결"
 msgid ""
 "The following is the process to connect the :abbr:`IoT (Internet of Things)`"
 " box via a WiFi connection to the Odoo database."
-msgstr ""
+msgstr "다음은 :abbr:`IoT (사물 인터넷)` 박스를 WiFi 연결을 통해 Odoo 데이터베이스에 연결하는 과정입니다."
 
 #: ../../content/applications/productivity/iot/config/connect.rst:84
 msgid ""
@@ -1686,6 +1780,8 @@ msgid ""
 " (Internet of Things)` box (:abbr:`USB (Universal Serial Bus)` devices, "
 "etc.)."
 msgstr ""
+"먼저 :abbr:`IoT (사물 인터넷)` 박스에 이더넷 케이블이 연결되어 있지 않은지 확인하세요. 그런 다음 모든 유선 장치를 "
+":abbr:`IoT (사물 인터넷)` 박스 (:abbr:`USB (범용 직렬 버스)` 장치 등)에 연결합니다."
 
 #: ../../content/applications/productivity/iot/config/connect.rst:88
 msgid ""
@@ -1697,6 +1793,10 @@ msgid ""
 "this will later be used to link the Odoo database to the :abbr:`IoT "
 "(Internet of Things)` box."
 msgstr ""
+"장치를 연결한 후, :abbr:`IoT(사물 인터넷)` 박스를 전원에 연결합니다. 컴퓨터에서 :menuselection:`IoT 앱 "
+"--> IoT 박스`로 이동한 다음 :menuselection:`IoT 박스` 현황판의 왼쪽 상단에 있는 :guilabel:`연결` "
+"버튼을 클릭합니다. 그런 다음 :guilabel:`WiFi 연결` 섹션에서 :guilabel:`토큰`을 복사합니다. 이는 나중에 Odoo"
+" 데이터베이스를 :abbr:`IoT (사물 인터넷)` 박스에 연결하는 데 사용됩니다."
 
 #: ../../content/applications/productivity/iot/config/connect.rst:94
 msgid ""
@@ -1705,6 +1805,8 @@ msgid ""
 "dispersed by the :abbr:`IoT (Internet of Things)` box  will start with "
 "`IoTBox-xxxxxxxxxx`."
 msgstr ""
+"컴퓨터로 돌아와서, 사용할 수 있는 WiFi 네트워크로 이동하여 :abbr:`IoT (사물 인터넷)` 박스 WiFi 네트워크에 "
+"연결합니다. :abbr:`IoT (사물 인터넷)` 박스에서 나오는 WiFi 네트워크는 `IoTBox-xxxxxxxxxx`로 시작합니다."
 
 #: ../../content/applications/productivity/iot/config/connect.rst-1
 msgid "WiFi networks available on the computer."
@@ -1739,6 +1841,9 @@ msgid ""
 "manually re-connected back to the original WiFi connection, if this does not"
 " happen automatically."
 msgstr ""
+"이제 :abbr:`IoT(사물 인터넷)` 박스에서 연결할 WiFi 네트워크를 선택하고 (암호가 있는 경우 입력) "
+":guilabel:`연결`을 클릭합니다. 몇 초 안에 브라우저가 :abbr:`IoT(사물 인터넷)` 박스 홈페이지로 리디렉션됩니다. "
+"자동으로 연결되지 않으면 컴퓨터를 원래의 WiFi 연결로 다시 수동으로 연결해야 할 수도 있습니다."
 
 #: ../../content/applications/productivity/iot/config/connect.rst-1
 msgid "Configuring the WiFi for the IoT box."
@@ -1762,6 +1867,8 @@ msgid ""
 " on the Odoo database. To do so, simply unplug the device and plug it back "
 "into the power source after ten seconds."
 msgstr ""
+":abbr:`IoT (사물 인터넷)` 박스는 Wi-Fi를 통해 성공적으로 연결한 후 수동으로 재부팅해야 박스가 Odoo 데이터베이스의 "
+"*IoT 앱*에 나타날 수 있습니다. 재부팅하려면, 장치의 플러그를 뽑았다가 10초 후에 다시 전원에 연결만 하면 됩니다."
 
 #: ../../content/applications/productivity/iot/config/connect.rst:139
 msgid "Manually connecting the IoT box using the token"
@@ -1782,6 +1889,8 @@ msgid ""
 ":guilabel:`Token`. This token will be entered into the :abbr:`IoT (Internet "
 "of Things)` box homepage."
 msgstr ""
+":guilabel:`IoT Box 연결` 페이지에서 표시되는 :guilabel:`WiFi 연결` 섹션에서 :guilabel:`토큰` "
+"오른쪽에 있는 :guilabel:`복사`를 클릭하세요. 이 토큰은 :abbr:`IoT (사물 인터넷)` 박스 홈페이지에 입력됩니다."
 
 #: ../../content/applications/productivity/iot/config/connect.rst:149
 msgid ""
@@ -1791,6 +1900,9 @@ msgid ""
 "the :abbr:`IoT (Internet of Things)` box (preferably by ethernet "
 "connection)."
 msgstr ""
+":abbr:`IoT(사물 인터넷)` 박스와 동일한 네트워크에 있는 컴퓨터에서 :abbr:`IoT (사물 인터넷)` 박스의 "
+":abbr:`IP (인터넷 프로토콜)` 주소를 브라우저 창에 입력하여 :abbr:`IoT (사물 인터넷)` 박스 홈페이지에 액세스합니다 "
+"(이더넷 연결 권장)."
 
 #: ../../content/applications/productivity/iot/config/connect.rst:154
 msgid ""
@@ -1800,6 +1912,9 @@ msgid ""
 "box. A receipt will print out with the :abbr:`IoT (Internet of Things)` "
 "box's :abbr:`IP (Internet Protocol)` address on it."
 msgstr ""
+":abbr:`IP (인터넷 프로토콜)` 주소는 :abbr:`IoT (사물 인터넷)` 박스가 연결된 라우터 관리 콘솔에서 액세스하거나 수신"
+" 프린터를 :abbr:`IoT (사물인터넷)`박스에 연결하여 액세스할 수 있습니다. 영수증은 :abbr:`IoT (사물 인터넷)` "
+"박스자의 :abbr:`IP(인터넷 프로토콜)` 주소와 함께 인쇄됩니다."
 
 #: ../../content/applications/productivity/iot/config/connect.rst:159
 msgid ""
@@ -1809,6 +1924,9 @@ msgid ""
 ":guilabel:`Connect`. The :abbr:`IoT (Internet of Things)` box will then link"
 " to the Odoo database."
 msgstr ""
+":abbr:`IoT(사물 인터넷)` 박스 홈페이지에서 :guilabel:`환경 설정`을 클릭하여 :guilabel:`Server` 섹션 "
+"아래에 *토큰*을 입력합니다. 그런 다음 *토큰*을 :guilabel:`서버 토큰` 필드에 붙여넣고 :guilabel:`연결`를 "
+"클릭합니다. 그러면 :abbr:`IoT (사물 인터넷)` 박스가 Odoo 데이터베이스에 연결됩니다."
 
 #: ../../content/applications/productivity/iot/config/connect.rst:167
 msgid "IoT box schema"
@@ -1841,6 +1959,9 @@ msgid ""
 "(Internet of Things)` image update. This means that the Odoo :abbr:`IoT "
 "(Internet of Things)` box software may need to be updated."
 msgstr ""
+"경우에 따라서는, Odoo의 최신 :abbr:`IoT (사물 인터넷)` 이미지 업데이트를 활용하기 위해서 :abbr:`IoT(사물 "
+"인터넷)` 박스에 있는 마이크로 SD 카드를 다시 구동해야 할 수도 있습니다. 즉 Odoo :abbr:`IoT (사물 인터넷)` 박스 "
+"소프트웨어를 업데이트해야 할 수도 있습니다."
 
 #: ../../content/applications/productivity/iot/config/flash_sdcard.rst:10
 msgid "Upgrade from the IoT box home page"
@@ -1853,6 +1974,9 @@ msgid ""
 "address` of the :abbr:`IoT (Internet of Things)` box. Then click on "
 ":guilabel:`Update` (next to the version number)."
 msgstr ""
+":menuselection:`IoT 앱 --> IoT 박스`에서 :abbr:`IoT (사물인터넷)` 박스 홈페이지로 이동하여 "
+":abbr:`IoT (사물인터넷)` 박스의 :guilabel:`IP 주소`를 클릭합니다. 그런 다음, :guilabel:`업데이트` "
+"(버전 번호 옆)를 클릭합니다."
 
 #: ../../content/applications/productivity/iot/config/flash_sdcard.rst:16
 msgid ""
@@ -1862,6 +1986,9 @@ msgid ""
 " (Internet of Things)` box will then flash itself to the new version. All of"
 " the previous configurations will be saved."
 msgstr ""
+"새로운 :abbr:`IoT (사물 인터넷)` 박스 이미지 버전을 사용할 수 있는 경우에는, :guilabel:`_xx.xx_로 "
+"업그레이드` 버튼이 페이지 하단에 나타납니다. 장치를 업그레이드하려면 이 버튼을 클릭합니다. 그러면 :abbr:`IoT (사물 인터넷)`"
+" 박스가 새 버전으로 직접 구동되어 깜박입니다. 이전에 설정한 내용은 모두 저장됩니다."
 
 #: ../../content/applications/productivity/iot/config/flash_sdcard.rst:22
 msgid ""
@@ -1870,6 +1997,9 @@ msgid ""
 " state. This means that the :abbr:`IoT (Internet of Things)` box will need "
 "to be re-flashed with a new image. See :ref:`flash_sdcard/etcher`."
 msgstr ""
+"이 과정은 30분 이상 소요될 수 있습니다. 상태가 불안정해질 수 있으므로 :abbr:`IoT (사물 인터넷)` 박스를 끄거나 전원을 "
+"뽑지 마세요. 이는 :abbr:`IoT(사물 인터넷)` 박스가 새 이미지로 다시 구동되어야 한다는 뜻입니다. "
+":ref:`flash_sdcard/etcher`를 참조하세요."
 
 #: ../../content/applications/productivity/iot/config/flash_sdcard.rst-1
 msgid "IoT box software upgrade in the IoT Box Home Page."
@@ -1936,6 +2066,10 @@ msgid ""
 "and extracted. Next, select the drive the image should be burned to. Lastly,"
 " click on :guilabel:`Flash` and wait for the process to finish."
 msgstr ""
+"이 단계가 완료되면 :abbr:`IoT (사물 인터넷)` 박스에 있는 마이크로 SD 카드를 컴퓨터나 리더기에 삽입합니다. "
+"*Etcher*를 열고 :guilabel:`파일에서 플래시 구동`을 선택한 후, 방금 다운로드 및 압축 해제한 이미지를 찾아서 "
+"선택합니다. 다음으로, 이미지를 사용할 드라이브를 선택하세요. 마지막으로 :guilabel:`플래시`를 클릭하고 프로세스가 완료될 때까지"
+" 기다립니다."
 
 #: ../../content/applications/productivity/iot/config/flash_sdcard.rst-1
 msgid "Balena's Etcher software dashboard."
@@ -2085,10 +2219,13 @@ msgid ""
 " Things)` box home page, refresh the :abbr:`IoT (Internet of Things)` home "
 "page to see if the error disappears."
 msgstr ""
+":abbr:`IoT (사물 인터넷)` 박스 홈페이지에 접속한 후 \"HTTPS 인증서\"가 있는지 확인하고, 없을 경우 생성하시기 "
+"바랍니다. 이처럼 :abbr:`IoT (사물 인터넷)` 박스 홈페이지에 오류가 있는 경우 :abbr:`IoT (사물 인터넷)` 홈페이지를"
+" 새로고침하여 오류가 없어졌는지 확인합니다."
 
 #: ../../content/applications/productivity/iot/config/https_certificate_iot.rst:84
 msgid "`ERR_IOT_HTTPS_CHECK_NO_SERVER`"
-msgstr ""
+msgstr "`ERR_IOT_HTTPS_CHECK_NO_SERVER`"
 
 #: ../../content/applications/productivity/iot/config/https_certificate_iot.rst:88
 #: ../../content/applications/productivity/iot/config/https_certificate_iot.rst:101
@@ -2307,6 +2444,10 @@ msgid ""
 "will give an error code mentioning :abbr:`DNS (Domain Name System)` (like "
 "`DNS_PROBE_FINISHED_NXDOMAIN`)."
 msgstr ""
+":abbr:`IoT (사물 인터넷)` 박스가 :abbr:`IP (인터넷 프로토콜)` 주소에서 액세스할 수 있지만 Odoo에서 할당한 "
+"도메인에서는 액세스할 수 없는 경우: `.odoo-iot.com`; 이런 경우 :abbr:`IoT (사물 인터넷)` 박스에 "
+":abbr:`DNS (도메인 이름 시스템)` 문제가 발생할 가능성이 높습니다. 일부 브라우저에서는 :abbr:`DNS (도메인 이름 "
+"시스템)` (예: `DNS_PROBE_FINISHED_NXDOMAIN`)과 관련된 오류 코드가 표시됩니다."
 
 #: ../../content/applications/productivity/iot/config/https_certificate_iot.rst:209
 msgid ""
@@ -2362,6 +2503,10 @@ msgid ""
 "device configuration processes can be found on the website of the device's "
 "manufacturer."
 msgstr ""
+"라우터에 접근이 되지 않는 경우 `Google DNS <https://developers.google.com/speed/public-"
+"dns>`_. 를 사용하는 장치에서 :abbr:`DNS (도메인 이름 시스템)` 설정을 변경해야 합니다. 이 작업은 :abbr:`IoT "
+"(사물 인터넷)` 박스와 상호 작용시킬 **모든** 장치 (예: 컴퓨터, 태블릿 또는 휴대폰)에서 진행해야 합니다. 장치별 설정 "
+"프로세스는 장치 제조업체의 웹사이트에서 확인할 수 있습니다."
 
 #: ../../content/applications/productivity/iot/config/https_certificate_iot.rst:252
 msgid ""
@@ -2587,6 +2732,9 @@ msgid ""
 " re-flashed to update the image (see :doc:`Flashing the SD Card "
 "<flash_sdcard>`)."
 msgstr ""
+":abbr:`IoT (사물 인터넷)` 박스 이미지가 너무 오래된 버전입니다. 이전 버전으로 :abbr:`IoT (사물 인터넷)` 박스 "
+"이미지를 사용 중인 경우, :abbr:`IoT (사물 인터넷)` 상자의 SD 카드를 다시 구동하여 이미지를 업데이트해야 합니다 "
+"(:doc:`SD 카드 구동<flash_sdcard>`을 참조하세요)."
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:25
 msgid ""
@@ -2608,6 +2756,9 @@ msgid ""
 "can reach the database and that the server doesn't use a multi-database "
 "environment."
 msgstr ""
+":abbr:`IoT (사물 인터넷)` 박스가 데이터베이스에 연결되면 재시작하게 됩니다. 이 경우, 데이터베이스에 나타날 때까지 최대 5분"
+" 정도 걸릴 수 있습니다. 5분이 지난 후에도 :abbr:`IoT (사물 인터넷)` 박스가 표시되지 않는 경우에는, :abbr:`IoT "
+"(사물 인터넷)` 박스가 데이터베이스에 연결되어 있는지 여부 및 다중 데이터베이스 환경이 아닌지를 확인하시기 바랍니다. "
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:37
 msgid ""
@@ -2639,6 +2790,10 @@ msgid ""
 "for the database and :abbr:`IoT (Internet of Things)` box with the Account "
 "Manager will result in an unsecured connection."
 msgstr ""
+"abbr:`HTTPS (하이퍼텍스트 전송 프로토콜 보안)` 인증서를 생성하려면, :abbr:`IoT (사물 인터넷)` 박스를 사용하기 "
+"위해 IoT 박스를 구독해야 합니다. 계정 관리자를 통해 데이터베이스 및 :abbr:`IoT (사물인터넷)` 박스에 대한 "
+":abbr:`IoT (사물인터넷)` 구독 설정을 하기 전에 :abbr:`IoT (사물인터넷)` 박스를 연결하할 경우 보안되지 않은 상태로"
+" 연결됩니다."
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:56
 msgid ""
@@ -2649,6 +2804,9 @@ msgid ""
 "that has a built-in firewall, can prevent the :abbr:`HTTPS (Hypertext "
 "Transfer Protocol Secure)` certificate from generating."
 msgstr ""
+"또한, 방화벽 때문에 :abbr:`HTTPS (하이퍼텍스트 전송 프로토콜 보안)` 인증서가 올바르게 생성되지 않을 수도 있습니다. 이 "
+"경우 인증서가 제대로 생성될 때까지 방화벽을 비활성화합니다. 라우터와 같이 방화벽이 내장되어 있는 특정한 장치의 경우에는 "
+":abbr:`HTTPS (하이퍼텍스트 전송 프로토콜 보안)` 인증서를 생성하지 못할 수도 있습니다."
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:63
 msgid ":doc:`HTTPS certificate (IoT) <https_certificate_iot>`"
@@ -2698,6 +2856,10 @@ msgid ""
 " Printer`. Follow the steps and select the *make* and *model* corresponding "
 "to the printer."
 msgstr ""
+"이를 해결하기 위해서는, 해당 드라이버를 수동으로 선택하면 됩니다. abbr:`IoT (사물 인터넷)` 박스 홈페이지에서 "
+":guilabel:`프린터 서버`를 클릭하고 :guilabel:`프린터` 탭으로 이동하여 목록에서 프린터를 선택합니다. "
+":guilabel:`관리` 드롭다운 메뉴에서 :guilabel:`프린터 수정`을 클릭합니다. 단계별로 프린터에 해당하는 *제조업체* 및 "
+"*모델*을 선택합니다."
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst-1
 msgid "Edit the printer connected to the IoT box."
@@ -2777,6 +2939,8 @@ msgid ""
 "*` command to print, follow this process to configure the printer with the "
 ":abbr:`IoT (Internet of Things)` box."
 msgstr ""
+"프린터에서 `ESC *` 명령어 실행이 되지 않는 경우에는 다음의 프로세스를 진행할 수 없습니다. 프린터가 `ESC *` 명령어로 인쇄할"
+" 수 있는 경우, 다음 프로세스에 따라 :abbr:`IoT (사물 인터넷)` 박스로 프린터를 설정합니다."
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:135
 msgid "IoT box configuration for ESC *"
@@ -2790,10 +2954,13 @@ msgid ""
 ":guilabel:`IP address` and this will direct to the :abbr:`IoT (Internet of "
 "Things)` box homepage."
 msgstr ""
+"`ESC *` 명령어로 인쇄가 되도록 :abbr:`IoT (사물인터넷)` 박스를 설정하려면 :menuselection:`IoT 앱 -->"
+" IoT 박스`로 이동하여 :abbr:`IoT (사물인터넷)` 박스 홈페이지로 이동합니다. 그런 다음 :guilabel:`IP 주소`를 "
+"클릭하면 :abbr:`IoT (사물인터넷)` 박스 홈페이지로 연결됩니다."
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:142
 msgid "**Choosing the printer**"
-msgstr ""
+msgstr "**프린터 선택**"
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:144
 msgid ""
@@ -2802,6 +2969,9 @@ msgid ""
 "Printers --> Add Printer`, choose the printer that should be modified, and "
 "then click :guilabel:`Continue`."
 msgstr ""
+"이제 :guilabel:`프린터 서버` 버튼을 클릭합니다. 그러면 브라우저가 *CUPS* 페이지로 리디렉션됩니다. 그 다음 "
+":menuselection:`관리 --> 프린터 --> 프린터 추가`로 이동하여 수정할 프린터를 선택한 다음 :guilabel:`계속`을"
+" 클릭합니다."
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:149
 msgid ""
@@ -2999,6 +3169,9 @@ msgid ""
 "of Things)` printer. Navigate to :menuselection:`Pos App --> Settings --> "
 "Connected Devices --> IoT Box --> Receipt Printer --> Save`."
 msgstr ""
+"프린터가 Odoo 데이터베이스에 표시되면 :abbr:`POS (Point of Sale)` 설정에서 해당 프린터를 :abbr:`IoT "
+"(사물 인터넷)` 프린터로 선택해야 합니다. :menuselection:`POS 앱 --> 설정 --> 연결된 장치 --> IoT 박스 "
+"--> 수신 프린터 --> 저장`에 따라 진행하세요."
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:234
 msgid ""
@@ -3007,6 +3180,9 @@ msgid ""
 " printer name with *CUPS*. Instead, the above process can be repeated to set"
 " up another printer from scratch to create one with modified parameters."
 msgstr ""
+"프린터가 잘못 설정된 경우 (텍스트가 계속 임의로 인쇄되거나 인쇄하도록 수신된 파일이 너무 크거나 작은 경우), 프린터 이름에 "
+"*CUPS*를 붙이는 방법으로는 수정할 수 없습니다. 대신 위에 있는 과정을 반복하여 다른 프린터를 처음부터 설정하면 매개변수가 수정되어"
+" 프린터를 생성할 수 있습니다."
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:239
 msgid "**Example setup of the Epson TM-U220B printer using ESC**"
@@ -3076,6 +3252,11 @@ msgid ""
 "plugging it back in, the printer reappears, so it can be said that this is "
 "the printer in question."
 msgstr ""
+"이 경우, 프린터가 :abbr:`USB (범용 직렬 버스)`로 연결되어 있으므로 :guilabel:`검색된 네트워크 프린터`로는 찾을 수"
+" 없습니다. 대신 :guilabel:`로컬 프린터` 아래의 :guilabel:`알 수 없음` 선택 항목에 있는 경우가 대부분입니다. "
+"프린터 :abbr:`USB(범용 직렬 버스)` 케이블을 :abbr:`IoT (사물 인터넷)` 박스에서 뽑은 후 페이지를 새로고침하면 "
+":guilabel:`알 수 없음` 프린터가 사라집니다. 다시 연결하면 프린터가 다시 나타나므로, 이 프린터가 문제의 프린터가 아닌 것을 "
+"알 수 있습니다."
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:283
 msgid ""
@@ -3098,6 +3279,9 @@ msgid ""
 "the `m` value can NOT be 32 or 33 (otherwise there will be random characters"
 " printed)."
 msgstr ""
+"해당하는 TM-U220 모델의 경우, `m`은 0 또는 1이어야 합니다. 위 그림에서 분홍색 상자 아래에 있는 "
+":guilabel:`설명`을 보면, `m` 값은 0, 1, 32 또는 33 중에서 입력합니다. 따라서 이 프린터에서는 `m` 값으로 32"
+" 또는 33을 사용할 수 없습니다 (그렇지 않으면 문자가 임의로 인쇄됩니다)."
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:297
 msgid ""
@@ -3107,6 +3291,9 @@ msgid ""
 "the *Low Vertical Density* will need to be forced, as this printer model "
 "does not support *High Vertical Density* for this command `ESC *`."
 msgstr ""
+"표에는 숫자 값 32와 33이 포함되어 있으며, 두 숫자 모두 :guilabel:`수직 데이터의 비트 수`가 24로 설정된 경우에 "
+"사용합니다. 이는 *고밀도 수직* 방식을 의미합니다. Epson TM-U220을 설정하는 경우, 이 프린터 모델에서는 `ESC *` "
+"명령어로 *고밀도 수직* 방식이 지원되지 않으므로 *서밀도 수직*을 강제 설정해야 합니다."
 
 #: ../../content/applications/productivity/iot/config/troubleshooting.rst:302
 msgid ""
@@ -3582,6 +3769,10 @@ msgid ""
 "devices can connect to the Windows virtual :abbr:`IoT (Internet of Things)` "
 "box."
 msgstr ""
+"마지막으로 규칙에 고유한 이름을 새로 지정합니다. 예를 들어 이름을은 'Odoo'로 할 수도 있습니다. 선택 사항으로, "
+":guilabel:`설명` 필드에 간단한 설명을 추가합니다. :guilabel:`완료`를 클릭하면 :guilabel:`규칙 설정` "
+"마법사가 완료됩니다. 이제 새로운 규칙이 활성화되었으며 장치를 Windows 가상 :abbr:`IoT (사물 인터넷)` 박스에 연결할 수"
+" 있습니다."
 
 #: ../../content/applications/productivity/iot/config/windows_iot.rst:178
 msgid "Uninstalling Windows IoT"
@@ -3595,6 +3786,9 @@ msgid ""
 "the control panel. Search for `Odoo` and click the :guilabel:`three dot "
 "menu` to uninstall."
 msgstr ""
+"Windows 가상 :abbr:`IoT (사물 인터넷)` 박스를 제거하려면 Windows 프로그램 관리자를 통해 진행합니다. 전체 "
+"Windows 버전에서 '프로그램'을 검색하세요. 그런 다음 제어판에 있는 :guilabel:`프로그램 추가/제거`를 선택합니다. "
+"`Odoo`를 검색한 후 :guilabel:`점 3개 메뉴`를 클릭하여 제거하세요."
 
 #: ../../content/applications/productivity/iot/config/windows_iot.rst:185
 msgid ""
@@ -3620,6 +3814,9 @@ msgid ""
 "point/check has been reached, or when a specific key is pressed during "
 "manufacturing."
 msgstr ""
+"몇 단계만 거치면 카메라를 Odoo 데이터베이스가 있는 :abbr:`IoT (사물 인터넷)` 박스에 연결할 수 있습니다. 카메라가 "
+":abbr:`IoT (사물 인터넷)` 상자에 연결되면 제조 공정에서 사용하거나 품질 관리 지점/품질 검사에 연결할 수 있습니다. 이렇게 "
+"하면 선택한 품질 관리 지점/검사에 도달하는 경우 또는 제조 중에 특정 키를 누를 경우 사진을 찍을 수 있습니다."
 
 #: ../../content/applications/productivity/iot/devices/camera.rst:12
 #: ../../content/applications/productivity/iot/devices/footswitch.rst:14
@@ -3726,6 +3923,10 @@ msgid ""
 "here, add the device in the :guilabel:`IoT Triggers` tab, in the "
 ":guilabel:`Device` column, by clicking :guilabel:`Add a Line`."
 msgstr ""
+"카메라를 작업에 연결하려면 먼저 작업 센터에서 설정해야 합니다. :menuselection:`제조 관리 앱 --> 환경 설정 --> 작업"
+" 센터`로 이동합니다. 그런 다음, 원하는 :guilabel:`작업 센터`로 이동하여 카메라를 사용하여 특정 작업 센터의 세부 양식을 "
+"표시합니다. 여기에서 :guilabel:`줄 추가`를 클릭하여 :guilabel:`디바이스` 열의 :guilabel:`IoT 연계 작동`"
+" 탭에 장치를 추가합니다."
 
 #: ../../content/applications/productivity/iot/devices/camera.rst:70
 msgid ""
@@ -3806,6 +4007,12 @@ msgid ""
 "*Manufacturing app* could be the :guilabel:`Validate` or :guilabel:`Mark as "
 "Done` buttons on a manufacturing work order."
 msgstr ""
+"풋스위치를 작업에 연결하려면 먼저 작업 센터를 설정해야 합니다. :menuselection:`제조 관리 앱 --> 환경 설정 --> 작업"
+" 센터`로 이동합니다. 여기에서 풋스위치가 사용될 :guilabel:`작업 센터`로 이동하고 :guilabel:`디바이스` 열 아래의 "
+":guilabel:`IoT 연계 작동` 탭에 :guilabel:`라인 추가`를 선택하여 장치를 추가합니다.이렇게 하면 풋스위치를 "
+":guilabel:`활동` 열의 드롭다운 옵션에 연결할 수 있고 선택적으로 키를 추가하여 이를 연계 작동되도록 할 수 있습니다. *제조 "
+"관리 앱*의 :guilabel:`활동`의 예로는 제조 작업 주문의 :guilabel:`승인` 또는 :guilabel:`완료로 표시` "
+"버튼이 있습니다."
 
 #: ../../content/applications/productivity/iot/devices/footswitch.rst-1
 msgid "Footswitch trigger setup on the Odoo database."
@@ -4593,6 +4800,9 @@ msgid ""
 "select one from the emoji window. To remove it, proceed equally and click "
 "the red-circled :guilabel:`x`."
 msgstr ""
+"아이콘을 추가하려면 h1 제목 위에 마우스를 놓고 :guilabel:`아이콘 추가`를 클릭합니다. 이렇게 하면 이모티콘이 임의로 자동 "
+"설정됩니다. 변경하려면 이모티콘을 클릭한 후 이모티콘 창에서 하나를 선택하세요. 삭제하려면 같은 방법으로 빨간색 동그라미 표시된 "
+":guilabel:`x`를 클릭하세요."
 
 #: ../../content/applications/productivity/knowledge/articles_editing.rst:90
 msgid ""
@@ -4618,6 +4828,9 @@ msgid ""
 " others are inherent to the knowledge app and cannot be found or used in any"
 " other application."
 msgstr ""
+"명령어를 사용하려면 `/`를 입력하여 **파워박스**를 엽니다. 명령어 이름을 입력하거나 여러 가지 기능 중에서 선택하여 블록, 이미지,"
+" 파일 등을 삽입해 보세요. `/Image` 또는 `/Article`과 같이 모든 앱에 공통적인 기능도 있지만 다른 기능의 경우에는 지식"
+" 센터 앱에서만 사용할 수 있는 것으로 다른 응용 프로그램에서는 검색하거나 사용할 수 없습니다."
 
 #: ../../content/applications/productivity/knowledge/articles_editing.rst:102
 msgid "List of commands"
@@ -5076,6 +5289,10 @@ msgid ""
 "Filter`, and set :guilabel:`Active` as :guilabel:`is No`). Then, select the "
 "article(s) and go to :menuselection:`Action --> Unarchive`."
 msgstr ""
+"문서를 보관하려면, :guilabel:`검색`을 클릭하여 문서를 선택한 다음 :menuselection:`활동 --> 보관 --> "
+"보관`을 클릭합니다. 보관된 문서는 검색 메뉴에서 숨겨집니다. 보관된 기사를 검색하려면 사용자 정의 필터를 추가하여 표시하세요 "
+"(:menuselection:`검색 --> 필터 --> 사용자 정의 필터 추가` 및 :guilabel:`활동`을 :guilabel:`하지"
+" 않음`으로 설정). 그런 다음 문서를 선택하고 :menuselection:`활동 --> 보관 취소`로 이동합니다."
 
 #: ../../content/applications/productivity/knowledge/management.rst:85
 msgid "Structure of articles"
@@ -5097,6 +5314,9 @@ msgid ""
 ":guilabel:`Move To` on the toolbox and selecting the article to use as a "
 "parent."
 msgstr ""
+"계층 구조를 설정하려면 상위 항목 옆에 있는 :guilabel:'+' 버튼을 클릭하여 새로 문서를 생성하거나, 상위 항목 아래로 "
+"끌어다놓기 또는 세로 줄임표 버튼 (:guilabel:`⋮`) 클릭으로 도구 상자에서 :guilabel:`이동`을 클릭하고 상위 항목으로"
+" 사용할 문서를 선택하여 이동합니다. "
 
 #: ../../content/applications/productivity/knowledge/management.rst:99
 msgid "Categories"
@@ -5169,6 +5389,9 @@ msgid ""
 "check :guilabel:`View in Kanban` as well. To validate and close the property"
 " creation window, click anywhere."
 msgstr ""
+"첫 번째 수준 제목 위로 마우스를 가져가면 버튼이 표시됩니다. :menuselection:`⚙ 속성 추가 --> 필드 유형`을 클릭하여 "
+"유형을 선택한 다음 필요한 경우 기본값을 추가합니다. 필드를 **칸반 화면**에 표시하려면 :guilabel:`칸반 화면`도 선택 "
+"표시하세요. 속성 생성 창을 확인 후에 닫으려면 아무 곳이나 클릭합니다."
 
 #: ../../content/applications/productivity/knowledge/properties.rst-1
 msgid "Dropdown of property fields types"
@@ -5274,6 +5497,10 @@ msgid ""
 "property field and choose from the created tags; enter the tags' name and "
 "press **enter**; enter a new tag's name and create a new one on the spot."
 msgstr ""
+"설정하려면 :guilabel:`태그` 필드에 `new_tag`를 입력하고 **입력**를 누르거나 :guilabel:`\"new_tag\""
+" 신규 생성`을 클릭하세요. 창을 닫으려면 아무 곳이나 클릭합니다. 그런 다음, 속성 필드에 태그를 추가합니다. 그렇게 하려면 속성 "
+"필드를 클릭하고 생성된 태그 중에서 선택합니다. 태그 이름을 입력하고 **입력**를 누르거나, 새로운 태그의 이름을 입력하고 그 자리에서"
+" 새로운 태그를 생성합니다."
 
 #: ../../content/applications/productivity/knowledge/properties.rst:75
 msgid ":guilabel:`Many2one`"
@@ -5905,6 +6132,10 @@ msgid ""
 "click on :guilabel:`New`. A new window with the created opportunity in the "
 "Odoo database will populate."
 msgstr ""
+"플러그인이 설치되어 작동 중이므로 이제 영업제안을 생성하려면 `O` [Odoo 아이콘]를 클릭하거나 :guilabel:'추가 작업'으로 "
+"이동하여 :guilabel:'Outlook용 Odoo'를 클릭하기만 하면 됩니다. 사이드 패널이 오른쪽에 나타나면 "
+":guilabel:`영업기회` 아래에서 :guilabel:`새로 만들기`를 클릭합니다. Odoo 데이터베이스에서 영업기회가 새 창에 "
+"생성되어 표시됩니다."
 
 #: ../../content/applications/productivity/studio.rst:6
 msgid "Studio"
@@ -6284,6 +6515,11 @@ msgid ""
 ":guilabel:`Generic User From Record` instead and change the :guilabel:`User "
 "field name` if necessary."
 msgstr ""
+"작업은 기록에 연결된 새로운 활동을 예약하는 데 사용합니다. :guilabel:`활동` 탭을 사용하여 평소대로 설정하되, "
+":guilabel:`배정 대상` 필드 대신 :guilabel:`활동 사용자 유형`을 선택합니다. 활동이 항상 동일한 사용자에게 할당되어야"
+" 하는 경우에는 :guilabel:`특정 사용자`를 선택하고 :guilabel:`담당자` 아래에 사용자를 추가합니다. 레코드에 연결된 "
+"사용자를 동적으로 타겟팅하려면 대신 :guilabel:`레코드의 일반 사용자`를 선택하고 필요한 경우 :guilabel:`사용자 필드 "
+"이름`을 변경합니다."
 
 #: ../../content/applications/productivity/studio/automated_actions.rst:232
 msgid ""
@@ -6292,6 +6528,9 @@ msgid ""
 ":guilabel:`Activity` to :guilabel:`Call` and set the :guilabel:`Activity "
 "User Type` to :guilabel:`Generic User From Record`."
 msgstr ""
+"영업제안이 영업기회로 전환된 후에는, 자동화 작업을 통하여 해당 영업제안 담당자에게 전화를 걸도록 설정하고자 하는 경우가 있습니다. "
+"이렇게 하려면, :guilabel:`활동`을 :guilabel:`통화`로 설정하고 :guilabel:`활동 사용자 유형`을 "
+":guilabel:`레코드의 일반 사용자`로 설정합니다."
 
 #: ../../content/applications/productivity/studio/automated_actions.rst:0
 msgid "Example of a Create Next Activity action"
@@ -6325,6 +6564,9 @@ msgid ""
 "them. How the data is presented and formatted on the :abbr:`UI (User "
 "Interface)` is defined by their widget."
 msgstr ""
+"필드에서 데이터베이스의 모델을 구조화합니다. 모델을 테이블이나 스프레드시트라고 가정한다면, 필드는 레코드에 데이터가 저장되는 열 (즉, "
+"행)입니다. 또한 필드는 내부에 저장되는 데이터의 유형을 정의합니다. 데이터가 표시되고 형식이 지정되는 방식은 해당 위젯에 의해 "
+"정의됩니다."
 
 #: ../../content/applications/productivity/studio/fields.rst:10
 msgid ""
@@ -6677,6 +6919,11 @@ msgid ""
 "have the same effects as described under :ref:`Selection "
 "<studio/fields/simple-fields/selection>`."
 msgstr ""
+":guilabel:`우선순위` 필드는 별 3개로 등급 시스템을 표시하여 중요도나 만족도 수준을 나타내는 데 사용할 수 있습니다. 이 필드"
+" 유형은 :ref:`선택 필드 <studio/fields/simple-fields/selection>`로, 기본값을 "
+":guilabel:`우선순위` 위젯으로 하여 우선순위 값 4개가 사전 지정되어 있습니다. 따라서, :guilabel:`배지`, "
+":guilabel:`배지들`, :guilabel:`라디오` 및 :guilabel:`선택` 위젯은 :ref:`선택 "
+"<studio/fields/simple-fields/selection>` 항목에서 설명한 것과 같은 효과를 가져오게 됩니다."
 
 #: ../../content/applications/productivity/studio/fields.rst:253
 msgid ""
@@ -6926,6 +7173,11 @@ msgid ""
 "effects as described under :ref:`Many2Many <studio/fields/relational-"
 "fields/many2many>`."
 msgstr ""
+":guilabel:`태그` 필드는 다른 모델에 있는 여러 가지의 값을 나타내기 위해 사용하며, 원 모양으로 표시하여 *태그*라고 "
+"지칭합니다. 이 필드 유형의 기본값은 :guilabel:`태그` 위젯이 기본적으로 선택되어 있는 :ref:`다대다 필드 "
+"<studio/fields/relational-fields/many2many>`입니다. 따라서, :guilabel:`체크박스` 및 "
+":guilabel:`다대다` 위젯은 :ref:`다대다 <studio/fields/relational-fields/many2many>` "
+"항목에서 설명된 것과 동일한 효과를 가져오게 됩니다."
 
 #: ../../content/applications/productivity/studio/fields.rst:430
 msgid ""
@@ -7076,6 +7328,10 @@ msgid ""
 "Furthermore, these features interact together in some cases to increase "
 "their usefulness."
 msgstr ""
+"스튜디오를 사용하여 새로 모델이나 앱을 생성하는 경우 최대 14개 기능을 추가하여 생성 프로세스 속도를 높일 수 있습니다. 해당 기능은 "
+"일반적으로 일부 표준 기능과 함께 사용되는 필드, 기본 설정 및 화면과 함께 번들로 제공됩니다. 대부분의 기능을 추후에 추가할 수 "
+"있지만, 처음부터 추가해 놓으면 모델 생성 프로세스가 훨씬 쉬워집니다. 또한 이러한 기능은 함께 사용하면 경우에 따라 더욱 편리하게 "
+"사용할 수 있습니다."
 
 #: ../../content/applications/productivity/studio/models_modules_apps.rst:28
 msgid ""
@@ -7352,6 +7608,9 @@ msgid ""
 "right corner of the report, click the vertical ellipsis icon "
 "(:guilabel:`⋮`), and then select :guilabel:`Duplicate`."
 msgstr ""
+"표준 PDF 보고서를 편집하려면 Odoo 업그레이드 후 표준 보고서에 대한 변경 사항을 덮어쓰게 되므로 **복제**한 후 복제 버전을 "
+"변경하는 것을 추천합니다. 보고서를 복제하려면 :menuselection:`스튜디오 --> 보고서`로 이동합니다. 보고서의 우측 상단 "
+"모서리에 마우스 포인터를 대고 세로 줄임표 아이콘(:guilabel:`⋮`)을 클릭한 다음 :guilabel:`복제`를 선택합니다."
 
 #: ../../content/applications/productivity/studio/pdf_reports.rst:0
 msgid "Duplicating a PDF report"
@@ -7577,6 +7836,11 @@ msgid ""
 "reports/header-footer/external`, :ref:`studio/pdf-reports/header-"
 "footer/internal`, or :ref:`studio/pdf-reports/header-footer/blank`."
 msgstr ""
+"스튜디오에서 새로운 보고서를 만드려면, 먼저 세 가지 보고서 스타일 중 하나를 선택해야 합니다. 머리글 및 바닥글 표시 내용을 결정하기 "
+"위해서만 사용됩니다. 그렇게 하려면, 새로 보고서를 추가하려는 앱으로 이동하여 **스튜디오 토글** 버튼을 클릭한 다음 "
+":guilabel:`보고서`를 클릭합니다. :guilabel:`신규 생성`을 클릭하고 :ref:`studio/pdf-"
+"reports/header-footer/external`, :ref:`studio/pdf-reports/header-"
+"footer/internal`, 또는 :ref:`studio/pdf-reports/header-footer/blank`를 선택하세요."
 
 #: ../../content/applications/productivity/studio/pdf_reports.rst:163
 msgid "External"
@@ -7897,6 +8161,10 @@ msgid ""
 "<studio/views/multiple-records>`, :ref:`timeline <studio/views/timeline>`, "
 "and :ref:`reporting <studio/views/reporting>`."
 msgstr ""
+"화면은 모델에 있는 데이터를 표시할 수 있는 인터페이스입니다. 하나의 모델에는 여러 개의 화면이 있을 수 있는데, 동일한 데이터를 다르게"
+" 표시한다는 점에서만 차이가 있습니다. 스튜디오에서 다음의 네 가지 카테고리로 화면을 설정합니다:ref:`일반 "
+"<studio/views/general>`, :ref:`다중 레코드 <studio/views/multiple-records>`, "
+":ref:`타임라인 <studio/views /timeline>` 및 :ref:`보고 <studio/views/reporting>`."
 
 #: ../../content/applications/productivity/studio/views.rst:12
 msgid ""
@@ -7921,6 +8189,10 @@ msgid ""
 " and its XPath, the latter which defines which part of the view is modified,"
 " are automatically generated."
 msgstr ""
+"XML 편집기로 화면을 편집하는 경우, 업그레이드나 모듈 업그레이드를 할 때 초기화된 후 유지가 되지 않기 때문에 직접 표준 화면 및 "
+"상속된 화면을 변경하지 마시기 바랍니다. 항상 스튜디오 상속 화면이 제대로 선택되어 있는지 확인합니다. 실제로 새로운 필드를 끌어다 "
+"놓아서 스튜디오 화면을 수정하는 경우, 특정 스튜디오에서 상속된 화면 및 화면에서의 수정된 부분을 해당 XPath가 자동으로 생성되어 "
+"정의합니다."
 
 #: ../../content/applications/productivity/studio/views.rst:31
 msgid "General views"
@@ -8159,6 +8431,10 @@ msgid ""
 "view. You can modify the :guilabel:`Start Date Field` and :guilabel:`Stop "
 "Date Field` after activating the view."
 msgstr ""
+"타임라인 화면 중 하나를 처음 활성화할 경우, 레코드가 시작 및 중지되는 시점을 화면에 표시하기 위해 모델의 :ref:`날짜 "
+"<studio/fields/simple-fields/date>` 또는 :ref:`날짜 및 시간 <studio/fields/simple-"
+"fields/date-time>` 필드에서 선택해야 합니다. 화면 활성화 후 :guilabel:`시작 날짜 필드` 및 "
+":guilabel:`중지 날짜 필드`를 수정할 수 있습니다."
 
 #: ../../content/applications/productivity/studio/views.rst:203
 msgid ""
@@ -8495,26 +8771,28 @@ msgstr ""
 
 #: ../../content/applications/productivity/to_do.rst:23
 msgid ""
-"You can create a new to-do on the fly from anywhere in Odoo by clicking the "
-"clock button and then :guilabel:`Add a To-Do`."
+"You can create a new to-do on the fly from anywhere in Odoo by opening the "
+"**command palette tool** with the keyboard shortcut ´ctrl+k´ and clicking "
+":guilabel:`Add a To-Do`, or by clicking the clock button and then "
+":guilabel:`Add a To-Do`."
 msgstr ""
 
 #: ../../content/applications/productivity/to_do.rst:0
 msgid "Adding a to-do on the fly"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:30
+#: ../../content/applications/productivity/to_do.rst:31
 msgid "Converting to-dos into project tasks"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:32
+#: ../../content/applications/productivity/to_do.rst:33
 msgid ""
 "If you use the :doc:`Project app <../services/project>`, you can convert to-"
 "dos into project tasks. To do so, open a to-do and click the gear button "
 "(:guilabel:`⚙`), then :guilabel:`Convert to Task`."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:35
+#: ../../content/applications/productivity/to_do.rst:36
 msgid ""
 "Next, select the :guilabel:`Project`, :guilabel:`Assignees`, and "
 ":guilabel:`Tags`, then click :guilabel:`Convert to Task`. The to-do is now a"
@@ -8525,11 +8803,11 @@ msgstr ""
 msgid "Converting a to-do into a task"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:42
+#: ../../content/applications/productivity/to_do.rst:43
 msgid "Managing the to-do pipeline"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:44
+#: ../../content/applications/productivity/to_do.rst:45
 msgid ""
 "Your assigned **to-dos** are displayed on the app dashboard. You can drag "
 "and drop a to-do to move it from one stage to another."
@@ -8539,13 +8817,13 @@ msgstr ""
 msgid "Example of a to-do pipeline"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:51
+#: ../../content/applications/productivity/to_do.rst:52
 msgid ""
 "Click the :guilabel:`+ Personal Stage` button on the left of the pipeline to"
 " create a new stage."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:53
+#: ../../content/applications/productivity/to_do.rst:54
 msgid ""
 "Click the gear button (:guilabel:`⚙`) next to a stage to :guilabel:`Fold`, "
 ":guilabel:`Edit`, or :guilabel:`Delete` it."
@@ -8555,11 +8833,11 @@ msgstr ""
 msgid "Stage settings button"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:60
+#: ../../content/applications/productivity/to_do.rst:61
 msgid "Scheduling activities"
 msgstr "활동 스케줄 예약"
 
-#: ../../content/applications/productivity/to_do.rst:62
+#: ../../content/applications/productivity/to_do.rst:63
 msgid ""
 "To schedule an activity on a to-do, click the clock button on the app "
 "dashboard, then the :guilabel:`+ Schedule an activity` button."
@@ -8569,43 +8847,43 @@ msgstr ""
 msgid "Scheduling an activity from the To-do dashboard"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:68
+#: ../../content/applications/productivity/to_do.rst:69
 msgid "To create the activity:"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:70
+#: ../../content/applications/productivity/to_do.rst:71
 msgid "Select an :guilabel:`Activity Type`."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:71
+#: ../../content/applications/productivity/to_do.rst:72
 msgid "Select a :guilabel:`Due date`."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:72
+#: ../../content/applications/productivity/to_do.rst:73
 msgid "Choose who the activity should be :guilabel:`Assigned to`."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:73
+#: ../../content/applications/productivity/to_do.rst:74
 msgid ""
 "Add a brief :guilabel:`Summary` if needed. You can add a more elaborate "
 "description in the :guilabel:`Log a note` box."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:76
+#: ../../content/applications/productivity/to_do.rst:77
 msgid "Click :guilabel:`Schedule` to complete the action."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:79
+#: ../../content/applications/productivity/to_do.rst:80
 msgid ""
 "The :guilabel:`To Do` activity is *not* a to-do task. Selecting it does not "
 "create a to-do task."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:82
+#: ../../content/applications/productivity/to_do.rst:83
 msgid "Viewing to-dos in the Project app"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:84
+#: ../../content/applications/productivity/to_do.rst:85
 msgid ""
 "If you use the :doc:`Project app <../services/project>`, your to-dos also "
 "appear as private tasks under the :guilabel:`My Tasks` view."
@@ -8615,7 +8893,7 @@ msgstr ""
 msgid "Example of a \"My Tasks\" pipeline in the Project app"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:91
+#: ../../content/applications/productivity/to_do.rst:92
 msgid ""
 "A padlock icon is visible on your private tasks to quickly identify them "
 "among your project tasks."
@@ -8691,6 +8969,9 @@ msgid ""
 "account is configured in Odoo via an :abbr:`API (Application Programming "
 "Interface)` connection."
 msgstr ""
+"WhatsApp은 Facebook의 모회사인 Meta에서 운영하는 메시지 서비스입니다. 일반적으로 많은 국가 및 기업에서 "
+"WhatsApp을 커뮤니케이션 도구로 사용하고 있습니다. 이 문서에서는 WhatsApp 비즈니스 계정과 Odoo를 통합시키는 내용을 "
+"검토합니다. 회사의 Meta 계정은 :abbr:`API(응용 프로그래밍 인터페이스)` 연결을 통해 Odoo에서 설정됩니다."
 
 #: ../../content/applications/productivity/whatsapp.rst:35
 msgid ""
@@ -8700,6 +8981,9 @@ msgid ""
 " to trigger a discussion between the sender and the receiver (a *Discuss* "
 "chat window will pop up if the customer answers within 15 days)."
 msgstr ""
+"WhatsApp 커넥터에서는 회사 개시 및 고객 개시라는 두 가지 흐름을 지원합니다. 한 명 이상 서식을 전송하면 회사에서 대화를 시작할"
+" 수 있습니다. 서식 전송이 완료되면, 수신자가 답변하면 발신자와 수신자 간 대화가 연계 작동되도록 할 수 있습니다 (고객이 15일 "
+"이내에 응답하면 *메일 및 채팅*의 채팅 창이 팝업으로 표시됩니다)."
 
 #: ../../content/applications/productivity/whatsapp.rst:40
 msgid ""
@@ -8707,6 +8991,8 @@ msgid ""
 "company's public WhatsApp number), then Odoo will open a group chat with all"
 " operators responsible for this WhatsApp channel."
 msgstr ""
+"클라이언트가 대화를 시작한 경우 (예: 회사의 공개 WhatsApp 번호로 전송) Odoo는 이 WhatsApp 채널을 담당하는 전체 "
+"운영자와 그룹 채팅을 엽니다."
 
 #: ../../content/applications/productivity/whatsapp.rst:44
 msgid ""
@@ -10332,11 +10618,13 @@ msgid ""
 "the :guilabel:`👤+ (add user)` icon next to it, and a window appears to "
 "invite users to the conversation."
 msgstr ""
+"WhatsApp 팝업 창을 확장하여 WhatsApp 채팅에 사용자를 추가할 수 있습니다. WhatsApp 대화창은 *메일 및 채팅* 앱에"
+" 있습니다. 옆에 있는 :guilabel:`👤+ (사용자 추가)` 아이콘을 클릭하면 대화에 사용자를 초대할 수 있는 창이 나타납니다."
 
 #: ../../content/applications/productivity/whatsapp.rst-1
 msgid ""
 "Adding users to a WhatsApp conversation, with the add user icon highlighted."
-msgstr ""
+msgstr "사용자 추가 아이콘이 강조 표시되어 있는 WhatsApp 대화창으로 사용자를 추가합니다."
 
 #: ../../content/applications/productivity/whatsapp.rst:831
 msgid "WhatsApp API FAQ"
@@ -10385,6 +10673,9 @@ msgid ""
 "duplicate template name on Odoo and sync the templates once again by "
 "following the steps here: :ref:`productivity/whatsapp/sync`."
 msgstr ""
+"서식 동기화를 할 때 Meta의 비즈니스 관리자와 Odoo에 이름이 같은 템플릿이 여러 개 있는 경우가 있습니다. 이로 인해 중복 유효성"
+" 검사 오류가 발생합니다. 이 문제를 해결하려면 Odoo에서 중복된 서식의 이름을 바꾸고 다음 단계에 따라 서식을 다시 동기화하세요: "
+":ref:`productivity/whatsapp/sync`."
 
 #: ../../content/applications/productivity/whatsapp.rst-1
 msgid "User error populated in Odoo when a duplicate template exists."

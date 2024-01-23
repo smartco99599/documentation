@@ -12,19 +12,19 @@
 # Martin Trigaux, 2023
 # Raymond Yu <cl_yu@hotmail.com>, 2023
 # diaojiaolou <124412206@qq.com>, 2023
-# Chloe Wang, 2023
 # Mandy Choy <mnc@odoo.com>, 2023
 # Wil Odoo, 2023
 # 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2023
+# Chloe Wang, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-21 13:43+0000\n"
+"POT-Creation-Date: 2024-01-19 15:28+0000\n"
 "PO-Revision-Date: 2023-11-08 08:57+0000\n"
-"Last-Translator: 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2023\n"
+"Last-Translator: Chloe Wang, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,7 +58,7 @@ msgstr ":doc:`/applications/general/auth/google`"
 
 #: ../../content/applications/productivity/calendar/google.rst:10
 msgid ":doc:`/administration/maintain/google_oauth`"
-msgstr ""
+msgstr ":doc:`/administration/maintain/google_oauth`"
 
 #: ../../content/applications/productivity/calendar/google.rst:13
 msgid "Setup in Google"
@@ -143,13 +143,15 @@ msgid ""
 "However, using a *Google WorkSpace* account allows for **Internal** User "
 "Type to be used."
 msgstr ""
+"*个人* Gmail 帐户只允许使用**外部**用户类型，这意味着 Google 可能需要批准或添加*范围*。不过，使用*Google "
+"工作空间*账户可以使用**内部**用户类型。"
 
 #: ../../content/applications/productivity/calendar/google.rst:64
 msgid ""
 "Note, as well, that while the API connection is in the *External* testing "
 "mode, then no approval is necessary from Google. User limits in this testing"
 " mode is set to 100 users."
-msgstr ""
+msgstr "请注意，当 API 连接处于*外部*测试模式时，无需获得 Google 批准。该测试模式下的用户限制为 100 个。"
 
 #: ../../content/applications/productivity/calendar/google.rst:67
 msgid ""
@@ -177,7 +179,7 @@ msgstr ""
 #: ../../content/applications/productivity/calendar/google.rst:78
 msgid ""
 "Finally, scroll to the bottom, and click on :guilabel:`Back to Dashboard`."
-msgstr ""
+msgstr "最后，滚动到底部，点击 :guilabel:`返回仪表板`。"
 
 #: ../../content/applications/productivity/calendar/google.rst:80
 msgid ""
@@ -345,7 +347,7 @@ msgstr ":doc:`/applications/general/auth/azure`"
 
 #: ../../content/applications/productivity/calendar/outlook.rst:10
 msgid ":doc:`/administration/maintain/azure_oauth`"
-msgstr ""
+msgstr ":doc:`/administration/maintain/azure_oauth`"
 
 #: ../../content/applications/productivity/calendar/outlook.rst:13
 msgid "Register the application with Microsoft Azure"
@@ -8717,26 +8719,28 @@ msgstr ""
 
 #: ../../content/applications/productivity/to_do.rst:23
 msgid ""
-"You can create a new to-do on the fly from anywhere in Odoo by clicking the "
-"clock button and then :guilabel:`Add a To-Do`."
+"You can create a new to-do on the fly from anywhere in Odoo by opening the "
+"**command palette tool** with the keyboard shortcut ´ctrl+k´ and clicking "
+":guilabel:`Add a To-Do`, or by clicking the clock button and then "
+":guilabel:`Add a To-Do`."
 msgstr ""
 
 #: ../../content/applications/productivity/to_do.rst:0
 msgid "Adding a to-do on the fly"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:30
+#: ../../content/applications/productivity/to_do.rst:31
 msgid "Converting to-dos into project tasks"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:32
+#: ../../content/applications/productivity/to_do.rst:33
 msgid ""
 "If you use the :doc:`Project app <../services/project>`, you can convert to-"
 "dos into project tasks. To do so, open a to-do and click the gear button "
 "(:guilabel:`⚙`), then :guilabel:`Convert to Task`."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:35
+#: ../../content/applications/productivity/to_do.rst:36
 msgid ""
 "Next, select the :guilabel:`Project`, :guilabel:`Assignees`, and "
 ":guilabel:`Tags`, then click :guilabel:`Convert to Task`. The to-do is now a"
@@ -8747,11 +8751,11 @@ msgstr ""
 msgid "Converting a to-do into a task"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:42
+#: ../../content/applications/productivity/to_do.rst:43
 msgid "Managing the to-do pipeline"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:44
+#: ../../content/applications/productivity/to_do.rst:45
 msgid ""
 "Your assigned **to-dos** are displayed on the app dashboard. You can drag "
 "and drop a to-do to move it from one stage to another."
@@ -8761,13 +8765,13 @@ msgstr ""
 msgid "Example of a to-do pipeline"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:51
+#: ../../content/applications/productivity/to_do.rst:52
 msgid ""
 "Click the :guilabel:`+ Personal Stage` button on the left of the pipeline to"
 " create a new stage."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:53
+#: ../../content/applications/productivity/to_do.rst:54
 msgid ""
 "Click the gear button (:guilabel:`⚙`) next to a stage to :guilabel:`Fold`, "
 ":guilabel:`Edit`, or :guilabel:`Delete` it."
@@ -8777,11 +8781,11 @@ msgstr ""
 msgid "Stage settings button"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:60
+#: ../../content/applications/productivity/to_do.rst:61
 msgid "Scheduling activities"
-msgstr ""
+msgstr "安排活动"
 
-#: ../../content/applications/productivity/to_do.rst:62
+#: ../../content/applications/productivity/to_do.rst:63
 msgid ""
 "To schedule an activity on a to-do, click the clock button on the app "
 "dashboard, then the :guilabel:`+ Schedule an activity` button."
@@ -8791,43 +8795,43 @@ msgstr ""
 msgid "Scheduling an activity from the To-do dashboard"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:68
+#: ../../content/applications/productivity/to_do.rst:69
 msgid "To create the activity:"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:70
+#: ../../content/applications/productivity/to_do.rst:71
 msgid "Select an :guilabel:`Activity Type`."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:71
+#: ../../content/applications/productivity/to_do.rst:72
 msgid "Select a :guilabel:`Due date`."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:72
+#: ../../content/applications/productivity/to_do.rst:73
 msgid "Choose who the activity should be :guilabel:`Assigned to`."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:73
+#: ../../content/applications/productivity/to_do.rst:74
 msgid ""
 "Add a brief :guilabel:`Summary` if needed. You can add a more elaborate "
 "description in the :guilabel:`Log a note` box."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:76
+#: ../../content/applications/productivity/to_do.rst:77
 msgid "Click :guilabel:`Schedule` to complete the action."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:79
+#: ../../content/applications/productivity/to_do.rst:80
 msgid ""
 "The :guilabel:`To Do` activity is *not* a to-do task. Selecting it does not "
 "create a to-do task."
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:82
+#: ../../content/applications/productivity/to_do.rst:83
 msgid "Viewing to-dos in the Project app"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:84
+#: ../../content/applications/productivity/to_do.rst:85
 msgid ""
 "If you use the :doc:`Project app <../services/project>`, your to-dos also "
 "appear as private tasks under the :guilabel:`My Tasks` view."
@@ -8837,7 +8841,7 @@ msgstr ""
 msgid "Example of a \"My Tasks\" pipeline in the Project app"
 msgstr ""
 
-#: ../../content/applications/productivity/to_do.rst:91
+#: ../../content/applications/productivity/to_do.rst:92
 msgid ""
 "A padlock icon is visible on your private tasks to quickly identify them "
 "among your project tasks."
@@ -9757,7 +9761,7 @@ msgid ""
 "Creating different templates that are tailored to specific situations lets "
 "users choose the right message for the right audience. This increases the "
 "quality of the message and the overall engagement rate with the customer."
-msgstr ""
+msgstr "根据具体情况创建不同的模板，可让用户为正确的受众选择正确的信息。这样可以提高信息的质量和客户的整体参与率。"
 
 #: ../../content/applications/productivity/whatsapp.rst:493
 msgid ""
